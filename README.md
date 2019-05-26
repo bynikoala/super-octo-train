@@ -1,6 +1,5 @@
 # super-octo-train
 Datenverarbeitung in der Medienproduktion
-
 Das wird zupaa
 
 Zwischenbericht 1
