@@ -30,6 +30,7 @@ Bereits erfolgte Tätigkeiten
 ----------------------------
 - Tutorial von Prof. Müller durchgearbeitet
 - Konzept erarbeitet
+- Mit API befasst
 
 Bereits gewonnene Erkenntnisse 
 -----------------------------
