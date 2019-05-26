@@ -27,7 +27,7 @@ Arbeitsaufteilung
 Bereits erfolgte Tätigkeiten
 ----------------------------
 - Tutorial von Prof. Müller durchgearbeitet
-- 
+- Konzept erarbeitet
 
 Bereits gewonnene Erkenntnisse 
 -----------------------------
@@ -46,5 +46,6 @@ Planung der Schritte bis ZB 2
 8. Interface realisieren
 9. Optimieren
 
-License:  
+License: 
+--------
 This module is licensed under whatever license you want it to be as long as the license is compatible with the fact that I blatantly copied multiple lines of code from the Python standard library.
