@@ -7,7 +7,7 @@ Zwischenbericht 1
 Ideenvorstellung
 ----------------
 Landschaftspinsel mit verschiedenen Biomen, darunter Wüsten, Wälder und Schneelandschaften.  
-Mit dem Pinsel lassen sich verschiedene zum Biom gehörende Objekte automatische platzieren, sowie die Bodentextur setzen. Übergänge werden ebenfalls generiert. Der User kann models für die einzelnen Biome selbst wählen und die Häufigkeit bestimmen.
+Mit dem Pinsel lassen sich verschiedene zum Biom gehörende Objekte automatisch platzieren, sowie die Bodentextur setzen. Übergänge werden ebenfalls generiert. Der User kann Models für die einzelnen Biome selbst wählen und die Häufigkeit bestimmen.
 
 Risikoanalyse
 -------------
@@ -26,7 +26,7 @@ Bereits erfolgte Tätigkeiten
 ----------------------------
 Tutorial von Prof. Müller durchgearbeitet
 
-Bereits gewonnene Erkentnisse 
+Bereits gewonnene Erkenntnisse 
 -----------------------------
 Tutorial von Prof. Müller
 Debugging gestaltet sich schwierig
@@ -38,7 +38,7 @@ Planung der Schritte bis ZB 2
 3. Scattering der Punkte
 4. Objekte setzen
 5. Objekte abhängig von Pinsel"farbe" verteilen
-6. models aus Bibliothek laden
+6. Models aus Bibliothek laden
 7. Wahrscheinlichkeitsfunktion implementieren
 8. Interface realisieren
 9. Optimieren
