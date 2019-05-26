@@ -30,8 +30,8 @@ Tutorial von Prof. Müller durchgearbeitet
 
 Bereits gewonnene Erkenntnisse 
 -----------------------------
-Tutorial von Prof. Müller
-Debugging gestaltet sich schwierig
+- Tutorial von Prof. Müller
+- Debugging gestaltet sich schwierig
 
 Planung der Schritte bis ZB 2
 -----------------------------
