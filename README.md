@@ -26,7 +26,8 @@ Arbeitsaufteilung
 
 Bereits erfolgte Tätigkeiten
 ----------------------------
-Tutorial von Prof. Müller durchgearbeitet
+- Tutorial von Prof. Müller durchgearbeitet
+- 
 
 Bereits gewonnene Erkenntnisse 
 -----------------------------
