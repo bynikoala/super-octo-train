@@ -9,6 +9,8 @@ Ideenvorstellung
 Landschaftspinsel mit verschiedenen Biomen, darunter Wüsten, Wälder und Schneelandschaften.  
 Mit dem Pinsel lassen sich verschiedene zum Biom gehörende Objekte automatisch platzieren, sowie die Bodentextur setzen. Übergänge werden ebenfalls generiert. Der User kann Models für die einzelnen Biome selbst wählen und die Häufigkeit bestimmen.
 
+!(https://cdn.discordapp.com/attachments/562341853278634006/582202623080529921/blendelul.PNG)
+
 Risikoanalyse
 -------------
 - Übergänge können schlecht gemacht wirken.
