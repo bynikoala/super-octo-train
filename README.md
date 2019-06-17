@@ -11,6 +11,7 @@ Landschaftspinsel für verschiedene Biome, darunter Wüsten, Wälder und Schneel
 Mit dem Pinsel lassen sich verschiedene zum Biom gehörende Objekte automatisch platzieren, sowie die Bodentextur setzen. Übergänge werden ebenfalls generiert. Der User kann Models für die einzelnen Biome selbst wählen und die Häufigkeit bestimmen.
 
 ![Valid XHTML](https://cdn.discordapp.com/attachments/562341853278634006/582202623080529921/blendelul.PNG)
+![Valid XHTML](https://cdn.discordapp.com/attachments/562341853278634006/589483256416567312/particle_group_system.PNG)
 
 Risikoanalyse
 -------------
