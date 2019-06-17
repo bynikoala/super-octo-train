@@ -8,7 +8,12 @@ bl_info = {
 
 import bpy
 
-class ScatterObjects:
+class ScatterObjects(bpy.types.Operator):
+
+    bl_idname = "mesh.scatter_objects"
+    bl_label = "Scatter objects on selected mesh"
+    bl_options = {'REGISTER', 'UNDO'}
+
     def execute(self, context):
         bpy.ops.object.mode_set(mode='OBJECT')
         bpy.ops.wm.append(directory = 'C:\\Users\\Robin\\Documents\\code\\python_workspace\\blender-DvinMp\\cartoon_lowpoly_trees_blend.blend\\Object\\', filename='Tree_1')
