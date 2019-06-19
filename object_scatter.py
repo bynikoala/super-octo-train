@@ -32,6 +32,8 @@ class ScatterObjects(bpy.types.Operator):
         count = 20
         obj_name = 'Tree_1'
 
+        mesh_before_scattering = [ob for ob in bpy.data.objects if ob.type == 'MESH']
+
         if len(obj.particle_systems) == 0:
             obj.modifiers.new("part", type='PARTICLE_SYSTEM')
             part = obj.particle_systems[0]
@@ -39,7 +41,7 @@ class ScatterObjects(bpy.types.Operator):
             settings = part.settings
             settings.emit_from = 'FACE'
             settings.physics_type = 'NO'
-            settings.particle_size = 0.01
+            settings.particle_size = 0.02
             settings.render_type = 'OBJECT'
             settings.dupli_object = bpy.data.objects[obj_name]
             settings.show_unborn = True
@@ -47,29 +49,18 @@ class ScatterObjects(bpy.types.Operator):
             settings.count = count
 
             bpy.ops.object.duplicates_make_real()
-
+    
+        mesh_after_scattering = [ob for ob in bpy.data.objects if ob.type == 'MESH']
         bpy.ops.group.create(name="generated_objects")
         grp = bpy.data.groups.get("generated_objects")
 
-        print(obj)
-
-        for i in range(1, count + 1):
-            count_string = ""
-            if i >= 100:
-                count_string = str(i)
-            elif i >= 10:
-                count_string = "0" + str(i)
-            else:
-                count_string = "00" + str(i)
-            name = obj_name + "." + count_string
-            generated_obj = bpy.data.objects[name]
+        for i in mesh_before_scattering:
+            mesh_after_scattering.remove(i)
+            
+        for generated_obj in mesh_after_scattering:
             grp.objects.link(generated_obj)
             generated_obj.parent = obj
             generated_obj.matrix_parent_inverse = obj.matrix_world.inverted()
-
-        print(obj.particle_systems[0].particles)
-        for particle in obj.particle_systems[0].particles:
-            print(particle.location)
 
         objs = bpy.data.objects
         objs.remove(objs[obj_name], do_unlink=True)
