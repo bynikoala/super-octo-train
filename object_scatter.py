@@ -15,6 +15,7 @@ class ScatterObjects(bpy.types.Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
+        original_obj = bpy.context.active_object
         bpy.ops.object.mode_set(mode='OBJECT')
         bpy.ops.wm.append(directory = 'C:\\Users\\Robin\\Documents\\code\\python_workspace\\blender-DvinMp\\cartoon_lowpoly_trees_blend.blend\\Object\\', filename='Tree_1')
 
@@ -59,13 +60,19 @@ class ScatterObjects(bpy.types.Operator):
             
         for generated_obj in mesh_after_scattering:
             grp.objects.link(generated_obj)
-            generated_obj.parent = obj
+            generated_obj.parent = original_obj
             generated_obj.matrix_parent_inverse = obj.matrix_world.inverted()
 
         objs = bpy.data.objects
         objs.remove(objs[obj_name], do_unlink=True)
         obj.select = True
         obj.modifiers.remove(obj.modifiers.get("part"))
+
+        bpy.ops.object.select_all(action = "DESELECT")
+        obj.select = True
+        original_obj.select = True
+        bpy.context.scene.objects.active = original_obj
+        bpy.ops.object.join()
 
 
 def register():
