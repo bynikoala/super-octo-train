@@ -184,6 +184,7 @@ class ScatterObjects(Operator):
         original_obj.select = True
         bpy.context.scene.objects.active = original_obj
         bpy.ops.object.join()
+        return {'FINISHED'} 
 
     #add texture
     def addTexture(self, biom, basepath, obj):
@@ -224,8 +225,6 @@ class ScatterObjects(Operator):
 
         obj.active_material = mat
         bpy.ops.object.mode_set(mode='OBJECT')
-
-        return {'FINISHED'}
 
 class HairCoordinates():
     #check if two objects are a minimum distance apart
