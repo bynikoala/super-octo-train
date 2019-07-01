@@ -32,6 +32,8 @@ def addTexture(biom, basepath, obj):
     #unwrap and add material
     obj.select = True
     bpy.context.scene.objects.active = obj
+    for vertex in obj.data.vertices:
+        vertex.select = True
 
     bpy.ops.object.mode_set(mode='EDIT')
     bpy.ops.uv.unwrap()
