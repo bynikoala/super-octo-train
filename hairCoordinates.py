@@ -19,6 +19,8 @@ def delete_all_empties():
 
 #main function to scatter objects on particle locations
 def generate_biome(copy_objects, ps, minimum_distance):
+    
+    bpy.ops.object.mode_set(mode='OBJECT')
     delete_all_empties()
 
     #this list should store all placed empties on an object
@@ -40,6 +42,7 @@ def generate_biome(copy_objects, ps, minimum_distance):
             list_all_my_empties.append(bpy.context.selected_objects[0])
 
     ### Placement of objects starts here
+        
     for empty in list_all_my_empties:
         #select random object from the list of objects
         copy_object = copy_objects[random.randint(0,len(copy_objects)-1)]
@@ -59,9 +62,9 @@ def generate_biome(copy_objects, ps, minimum_distance):
 # something like generate_biome(minimumDistance, copy_objects, particle_system):
 
 ### Parameters ###
-minimum_distance = 2
-copy_objects = [bpy.data.objects['Arbre Normal'], bpy.data.objects['Arbre Hiver'], bpy.data.objects['SapinHiver.015']]
-ps = bpy.data.objects["Plane"].particle_systems["ParticleSystem"]
+#minimum_distance = 2
+#copy_objects = [bpy.data.objects['Arbre Normal'], bpy.data.objects['Arbre Hiver'], bpy.data.objects['SapinHiver.015']]
+#ps = bpy.data.objects["Plane"].particle_systems["ParticleSystem"]
 ##################
 
-generate_biome(copy_objects, ps, minimum_distance)
+#generate_biome(copy_objects, ps, minimum_distance)
